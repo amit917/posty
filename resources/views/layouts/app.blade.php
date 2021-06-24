@@ -27,7 +27,11 @@
 <a href = "" class = "p-3">{{auth()->user()->name}}</a>
 </li>
 <li>
-<a href = "" class = "p-3">Logout</a>
+<form action="{{route('logout')}}" method="post" class = "p-3 inline">
+@csrf
+<button type="submit">Log out</button>
+
+</form>
 </li>
 
 @endauth
