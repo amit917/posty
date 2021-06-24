@@ -20,19 +20,27 @@
 </li>
 
 </ul>
+
 <ul class = "flex items-center">
+@auth
 <li>
-<a href = "" class = "p-3">Login</a>
+<a href = "" class = "p-3">{{auth()->user()->name}}</a>
 </li>
+<li>
+<a href = "" class = "p-3">Logout</a>
+</li>
+
+@endauth
+@guest
 <li>
 <a href = "{{route('register')}}" class = "p-3">Register</a>
 </li>
-<li>
-<a href = "" class = "p-3">Aritra Mitra</a>
-</li>
+
 <li>
 <a href = "" class = "p-3">Log out</a>
 </li>
+@endguest
+
 
 </ul>
 
