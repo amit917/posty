@@ -19,6 +19,6 @@ class LoginController extends Controller
       if(!auth()->attempt($request->only('email','password'),$request->remember)){
           
       }
-      return redirect()->route('dashboard');
+      return redirect()->intended('home');
     }
 }

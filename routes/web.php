@@ -8,7 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 
 
 Route::get('/', function () {
-    return view('home');
+    return view('home')->name('home');
 });
 
 Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard')->middleware('auth');
