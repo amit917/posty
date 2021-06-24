@@ -37,7 +37,7 @@
 </li>
 
 <li>
-<a href = "" class = "p-3">Log out</a>
+<a href = "{{route('login')}}" class = "p-3">Log In</a>
 </li>
 @endguest
 
