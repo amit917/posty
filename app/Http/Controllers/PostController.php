@@ -13,7 +13,7 @@ class PostController extends Controller
     }
     public function index(){
         
-        $posts = Post::latest()->get();
+        $posts = Post::latest()->paginate(1);
         
         return view('posts.index',['posts'=>$posts]);
     }
