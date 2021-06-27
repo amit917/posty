@@ -20,4 +20,4 @@ Route::get('/posts',[PostController::class,'index'])->name('posts');
 Route::post('/login',[LoginController::class,'store']);
 Route::get('/register',[RegisterController::class,'index'])->name('register');
 Route::post('/register',[RegisterController::class,'store']);
-Route::get('/logout',[RegisterController::class,'index'])->name('logout');
+Route::post('/logout',[RegisterController::class,'index'])->name('logout');
